@@ -322,5 +322,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   7. https://www.nicepng.com/maxp/u2q8u2w7t4i1y3t4/
   8. https://fsymbols.com/signs/stars/
   9. https://css-tricks.com/snippets/css/complete-guide-grid/ 
+  10. https://www.veryicon.com/icons/miscellaneous/eva-icon-fill/list-47.html
+  11. https://www.futbin.com/players
 
 </details>
