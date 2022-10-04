@@ -276,6 +276,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je uitkomst - karakteristiek screenshots:
  
+![uitkomst](https://user-images.githubusercontent.com/112875181/193829297-6b2cdce9-0cb8-441f-aeb4-591909ee2b34.png)
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -287,12 +288,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ik heb geleerd dat met margin: 0 auto; iets in het midden komt zonder justify content te gebruiken.
   Ik heb geleerd gradients te gebruiken 
   ik heb geleerd radio buttons te gebruiken en deze bruikbaar te maken voor filters
+![Schermafbeelding 2022-10-04 om 15 02 39](https://user-images.githubusercontent.com/112875181/193829353-d97fe7c2-34db-4a2e-9701-3e671c9dace4.png)
 
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
   De radio buttons eerst geen achtergrond kleur te geven en bij hover en als ze active zijn wel.
+![Schermafbeelding 2022-10-04 om 15 04 08](https://user-images.githubusercontent.com/112875181/193829263-d7c30a5c-98ce-4daa-ba91-44503c70dd69.png)
 
 </details>
 
