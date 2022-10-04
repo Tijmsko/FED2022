@@ -42,12 +42,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   home page
+<img width="1420" alt="home" src="https://user-images.githubusercontent.com/112875181/193845947-f4e6bdcd-1c2c-4670-90f0-baa9b828c3bd.png">
 
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  player profile met stats
+  Database van alles splers
+ <img width="1440" alt="spelers" src="https://user-images.githubusercontent.com/112875181/193846026-422bbc9c-5cee-495e-a2b2-c9bb1dabf654.png">
 
- 
 </details>
 
 
