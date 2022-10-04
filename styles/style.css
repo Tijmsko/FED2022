@@ -1,0 +1,843 @@
+/**************/
+/* CSS REMEDY */
+/**************/
+*, *::after, *::before {
+  box-sizing:border-box;  
+}
+
+button, summary {
+	cursor: pointer;
+}
+
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	/* startje */
+	--color-textzwart:#111;
+	--color-textwit:#eee;
+	--color-textgrijs: #DEDFDE;
+	--color-background:#eee;
+	--color-backgroundtopheader: #111;
+	--color-futbingroen: #55CBA1;
+	--color-menugrijs: #212120;	
+	--menu-gradient:linear-gradient(rgb(34, 34, 34), rgb(34, 34, 34));
+	--color-buttongradient:linear-gradient(rgb(225, 0, 0), rgb(251, 176, 0));
+	--menu-border:#42f;
+	--button-color:#fff;
+	--playstation-color:#3C97D3;
+	--xbox-color: #77B922;
+	--origin-color: #F05922;
+}
+
+
+
+
+
+/****************/
+/* JOUW STYLING */
+/****************/
+
+/* jouw code */
+@font-face {
+	font-family: 'futbinfont';
+	src: url(../fonts/poppins-regular.ttf);
+}
+body {
+  color:var(--color-text);
+  background-color:var(--color-background);
+  margin: 0;
+  padding: 0%;
+}
+
+/* Bovenste bar - populaire spelers */
+body>header>section {
+	display: flex;
+	background-color:var(--color-backgroundtopheader);
+	width: 100%;
+}
+
+body>header:nth-of-type(1) section img,a {
+	height: 1.5em;
+	margin-left: 0.2em;
+}
+/* einde Bovenste bar - populaire spelers */
+
+/* header in de main */
+main header{
+	background-color: var(--color-menugrijs);
+	padding: 1em;
+}
+
+main header div{
+	display: flex;
+	justify-content: space-evenly;
+} 
+
+main header a{
+	text-decoration: none;
+	color: var(--color-textwit);
+	margin-top: 1em;
+	font-family: 'futbinfont';
+} 
+
+main header a:hover{
+	color: var(--color-textgrijs);
+} 
+
+main header img{
+	width: 18em;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+} 
+
+@media (min-width:47.5em) {
+	main header div{
+		justify-content: center;
+	} 
+
+	main header a{
+		margin-left: 1em;
+		margin-right: 1em;
+	} 
+}
+/* einde header in de main */
+
+/* Links naar promo's */
+main>section:nth-of-type(1){
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	row-gap: 4.2em;
+	justify-content: center;
+}
+
+main section:nth-of-type(1) a img{
+	width: 10em;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	transition: 1s;
+}
+
+main section:nth-of-type(1) a img:hover{
+	width: 12em;
+}
+/* einde Links naar promo's */
+
+/* radiobutton voor de spelerslijst */
+main>section:nth-of-type(2)>div:nth-of-type(1){
+	display: flex;
+	justify-content: center;
+	margin-top: 7em;
+}
+
+main>ul.totw li:not(.totw),
+main>ul.new li:not(.new){
+	display:none;
+}
+
+main form fieldset{
+	border: 0;
+}
+
+main form fieldset label input{
+	  appearance: none;
+	  background-color: #fff;
+	  margin: 0;
+}
+
+main form fieldset label{
+	display: inline-block;
+	font-family: 'futbinfont';
+	background-color: var(--color-futbingroen);
+	color: var(--color-textzwart);
+	margin-left: .5em;
+	margin-right: .5em;
+	height: 3em;
+	padding: 1em;
+	line-height: 1em;
+	border-radius: 3% 3% 3% 3% / 10% 10% 10% 10% ;
+	transition: .5s;
+}
+
+main form fieldset label:hover{
+	background-color: var(--color-menugrijs);
+	color: var(--color-textwit);
+	cursor: pointer;
+}
+/* radiobutton voor de spelerslijst */
+
+/* lijst met spelerskaarten */
+main>section:nth-of-type(2)>ul{
+	display: grid;
+	grid-template-columns: 4.875em 4.875em 4.875em;
+	list-style: none;
+	gap: .5em;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	margin-top: 2em;
+}
+
+main>section:nth-of-type(2)>ul:nth-of-type(1) li img{
+	height: 7.5em;
+}
+
+main>section:nth-of-type(2)>a:nth-of-type(1){
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-decoration: none;
+	color: var(--color-textwit);
+	height: 3em;
+	width: 13.5em;
+	background: linear-gradient(40deg, #c00, #fb3) !important;
+	font-size: 1em;
+	border-radius: 5% 5% 5% 5% / 25% 25% 25% 25% ;
+	padding: 0.7em;
+	padding-left: 1.5em;
+	font-size: .8em;
+	margin-top: 2em;
+	font-family: 'futbinfont';
+	box-shadow: 0px 2px 5px grey;
+	transition: .5s;
+}
+
+main>section:nth-of-type(2)>a:nth-of-type(1):hover{
+	box-shadow: 0px 4px 7px grey;
+}
+/* einde lijst met spelerskaarten */
+
+/* latest sbc section */
+	main>section:nth-of-type(3){
+		background-color:var(--color-menugrijs);
+		margin-top: 1em;
+		padding: 1em;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	main>section:nth-of-type(3)>div{
+		display: flex;
+	}
+
+	main>section:nth-of-type(3)>ul{
+		margin: 0;
+		padding: 0;
+		margin-top: 1em;
+		display: grid;
+		grid-template-columns: 7.5em 7.5em;
+		row-gap: 1em;
+		column-gap: 1em;
+		justify-content: center;
+		list-style: none;
+	}
+
+	main>section:nth-of-type(3)>div>img{
+		height: 1.8em;
+		width: 1.8em;
+		margin-top: .2em;
+	}
+
+	main>section:nth-of-type(3)>div>h2{
+		display: block;
+		font-size: 1.5em;
+		flex-grow: 3;
+		padding: 0;
+		margin: 0;
+		margin-left: .3em;
+		color: var(--color-textwit);
+		font-family: 'futbinfont';
+	}
+
+	main>section:nth-of-type(3)>div>a{
+		text-decoration: none;
+		color: var(--color-textwit);
+		height: 1.8em;
+		width: 3.8em;
+		background: rgba(150,150,150,0.1);
+		border-radius:	7% 7% 7% 7% / 12% 12% 12% 12%;
+		padding: .3em;
+		font-family: 'futbinfont';
+		font-size: 1em;
+		line-height: 1.5em;
+		transition: .2s;
+	}
+
+	main>section:nth-of-type(3)>ul li a img{
+		height: 70%;
+		width: 70%;
+	}
+
+	main>section:nth-of-type(3)>ul a{
+		list-style: none;
+		text-decoration: none;
+		color: var(--color-textwit);
+		font-family: 'futbinfont';
+		display: flex;
+		align-items: center;
+		height: 10em;
+		font-size: 0.8em;
+		width: 100%;
+		background: rgba(150,150,150,0.1);
+		border-radius: 5%;
+		padding: .2em;
+		flex-direction: column;
+		text-overflow: ellipsis;
+    	white-space: nowrap;
+		overflow: hidden;
+		transition: .3s;
+	}
+	
+	main>section:nth-of-type(3)>ul a:hover{
+		background: rgba(250, 250, 250, 0.1);
+	}
+
+	main>section:nth-of-type(3)>div>a:hover{
+		background: rgba(250, 250, 250, 0.1);
+	}
+/* einde latest sbc section */
+
+
+/* Random New squads */
+	main>section:nth-of-type(4){
+		display: flex;
+		justify-content: center;
+		margin-top: 1em;
+		flex-direction: column;
+		margin: 0;
+	}
+
+	main>section:nth-of-type(4)>h2{
+		font-family: 'futbinfont';
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 1em;
+		margin-top: 2em;
+		border-style:solid;
+		border-color:var(--color-backgroundtopheader);
+		border-width:0 0 1px;
+		width: 70%;
+	}
+
+	main>section:nth-of-type(4)>ul{
+		margin: 0;
+		padding: 0;
+	}
+
+	main>section:nth-of-type(4)>ul a{
+		display: flex;
+		margin: 0 auto;
+		list-style: none;
+		height: 2em;
+		width: 70%;
+		border: gray 1px solid;
+		margin-top: .5em;
+		border-radius: 1.75% 1.75% 1.75% 1.75% / 10% 10% 10% 10% ;
+		text-decoration: none;
+		color: var(--color-textzwart);
+		font-family: 'futbinfont';
+		justify-content: space-between;
+		padding-left: .6em;
+		padding-right: .6em;
+		background-color: var(--color-background);
+		box-shadow: 0px 2px 5px grey;
+		transition: .5s;
+	}
+
+	main>section:nth-of-type(4)>ul a:hover{
+		box-shadow: 0px 4px 7px grey;
+	}
+
+	main>section:nth-of-type(4)>ul li p{
+		line-height: 0em;
+	}
+/* einde Random New squads */
+
+/* top reviews */
+main>section:nth-of-type(5){
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	flex-direction: column;
+	margin: 0;
+}
+
+main>section:nth-of-type(5)>h2{
+	font-family: 'futbinfont';
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+	margin-top: 2em;
+	border-style:solid;
+	border-color:var(--color-backgroundtopheader);
+	border-width:0 0 1px;
+	width: 70%;
+}
+
+main>section:nth-of-type(5)>ul{
+	margin: 0;
+	padding: 0;
+}
+
+main>section:nth-of-type(5)>ul a{
+	display: flex;
+	margin: 0 auto;
+	list-style: none;
+	height: 2em;
+	width: 70%;
+	border: gray 1px solid;
+	margin-top: .5em;
+	border-radius: 1.75% 1.75% 1.75% 1.75% / 10% 10% 10% 10% ;
+	padding: 0.1em;
+	text-decoration: none;
+	color: var(--color-textzwart);
+	font-family: 'futbinfont';
+	background-color: var(--color-background);
+	box-shadow: 0px 2px 5px grey;
+	transition: .5s;
+}
+
+main>section:nth-of-type(5)>ul a:hover{
+	box-shadow: 0px 4px 7px grey;
+}
+
+main>section:nth-of-type(5)>ul a img{
+	height: 1.8em;
+}
+/* einde Top reviews */
+
+/* Todays top packs */
+main>section:nth-of-type(6){
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+	flex-direction: column;
+	margin: 0;
+}
+
+main>section:nth-of-type(6)>h2{
+	font-family: 'futbinfont';
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+	margin-top: 2em;
+	border-style:solid;
+	border-color:var(--color-backgroundtopheader);
+	border-width:0 0 1px;
+	width: 70%;
+}
+
+main>section:nth-of-type(6)>ul{
+	margin: 0;
+	padding: 0;
+}
+
+main>section:nth-of-type(6)>ul a{
+	display: flex;
+	margin: 0 auto;
+	list-style: none;
+	height: 2em;
+	width: 70%;
+	border: gray 1px solid;
+	margin-top: .5em;
+	border-radius: 1.75% 1.75% 1.75% 1.75% / 10% 10% 10% 10%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--color-textzwart);
+	font-family: 'futbinfont';
+	justify-content: space-between;
+	padding-left: .6em;
+	padding-right: .6em;
+	background-color: var(--color-background);
+	box-shadow: 0px 2px 5px grey;
+	transition: .5s;
+}
+
+main>section:nth-of-type(6)>ul a:hover{
+	box-shadow: 0px 4px 7px grey;
+}
+
+main>section:nth-of-type(6)>ul li p{
+	line-height: 0em;
+}
+/* einde Todays top packs */
+
+/* Latest index 100 */
+main>section:nth-of-type(7)>div{
+	display: flex;
+	justify-content: space-evenly;
+	width: 70%;
+	margin: 0 auto;
+	margin-top: .5em;
+}
+
+main>section:nth-of-type(7)>h2{
+	font-family: 'futbinfont';
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 1em;
+	margin-top: 2em;
+	border-style:solid;
+	border-color:var(--color-backgroundtopheader);
+	border-width:0 0 1px;
+	width: 70%;
+}
+
+main>section:nth-of-type(7)>div>a:nth-of-type(1){
+	background-color: var(--playstation-color);
+	height: 15.2em;
+	width: 6em;
+	border-radius: 5% 5% 5% 5% / 2% 2% 2% 2%; 
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	transition: .5s;
+}
+
+main>section:nth-of-type(7)>div>a:nth-of-type(2){
+	background-color: var(--xbox-color);
+	height: 15.2em;
+	width: 6em;
+	border-radius: 5% 5% 5% 5% / 2% 2% 2% 2%; 
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	transition: .5s;
+}
+
+main>section:nth-of-type(7)>div>a:nth-of-type(3){
+	background-color: var(--origin-color);
+	height: 15.2em;
+	width: 6em;
+	border-radius: 5% 5% 5% 5% / 2% 2% 2% 2%; 
+	display: flex;
+	flex-direction: column;
+	text-decoration: none;
+	transition: .5s;
+}
+
+main>section:nth-of-type(7)>div>a:hover{
+	box-shadow: 0px 4px 7px grey;
+}
+
+main>section:nth-of-type(7)>div>a img{
+	width: 40%;
+	align-self: center;
+	border-style:solid;
+	border-color:var(--color-background);
+	border-width:0 0 0.5px;
+	margin-top: .2em;
+}
+
+main>section:nth-of-type(7)>div>a h3{
+	color: var(--color-textgrijs);
+	font-family: 'futbinfont';
+	text-align: center;
+	margin: 0;
+	margin-top: .5em;
+	font-size: .7em;
+}
+
+main>section:nth-of-type(7)>div>a p{
+	color: var(--color-textwit);
+	font-family: 'futbinfont';
+	text-align: center;
+	margin: 0;
+	font-size: .7em;
+}
+/* Einde Latest index 100 */
+
+/* spelerslijst en latest sbc @media */
+@media (min-width:53em) {
+	main>section:nth-of-type(2)>ul:nth-of-type(1){
+		grid-template-columns: 4.875em 4.875em 4.875em 4.875em 4.875em;
+	}
+	
+	main>section:nth-of-type(3){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	main>section:nth-of-type(3)>div>a{
+		margin-left: 10em;
+	}
+
+	main>section:nth-of-type(3)>div{
+		display: flex;
+		justify-content: center;
+	}
+
+	main>section:nth-of-type(3)>div>h2{
+		display: block;
+		flex-grow: 0;
+	}
+
+	main>section:nth-of-type(3)>ul{
+		grid-template-columns: 7.5em 7.5em 7.5em;
+	}
+
+	main>section:nth-of-type(4){
+		width: 40em;
+		margin: 0 auto;
+	}
+	
+	main>section:nth-of-type(4)>ul{
+		list-style: none;
+	}
+
+	main>section:nth-of-type(5){
+		width: 40em;
+		margin: 0 auto;
+	}
+
+	main>section:nth-of-type(5)>ul{
+		list-style: none;
+	}
+
+	main>section:nth-of-type(6){
+		width: 40em;
+		margin: 0 auto;
+	}
+
+	main>section:nth-of-type(6)>ul{
+		list-style: none;
+	}
+
+	main>section:nth-of-type(7){
+		width: 40em;
+		margin: 0 auto;
+	}
+}
+
+/* spelerslijst en latest sbc @media */
+
+/* Social media section */
+footer>section:nth-of-type(1){
+	width: 100%;
+	background-color: var(--color-futbingroen);
+	height: 7em;
+	padding: .3em;
+	margin-top: 4em;
+}
+
+footer>section:nth-of-type(1) p{
+	font-family: 'futbinfont';
+	color: var(--color-textwit);
+	text-align: center;
+}
+
+footer>section:nth-of-type(1)>div{
+	display: flex;
+	justify-content: center;
+}
+
+footer>section:nth-of-type(1)>div a>img{
+	width: 1em;
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+/* einde social media section */
+
+/* Navigatie */
+nav {
+	/* JOUW CODE HIER - stap 3 */
+	order:-1;  
+	background-color: var(--color-futbingroen);
+	height: 3.5em;
+	display: flex;
+	justify-content: space-between;
+	padding: .5em;
+  }
+
+nav input{
+	align-items: center;
+	Border: none;
+	border-bottom: 1px solid var(--color-textwit);
+	background: transparent;
+}
+
+
+  
+  
+  
+  /***************/
+  /* MENU BUTTON */
+  /***************/
+  nav button {
+	padding:.5em;
+	
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	gap:.25em;
+	
+	/* standaard styling aanpassen */
+	appearance:none;
+	background-color: transparent;
+	border:none;
+	font:inherit;
+	text-align:center;
+	color:var(--button-color);
+	
+	/* JOUW CODE HIER - stap 5 */
+	position:relative;
+	z-index:100;
+  }
+  
+  nav button img {
+	height:1em;
+  }
+  
+  /* als menu open is */
+  nav.toonMenu button img {
+	/* JOUW CODE HIER - stap 5 */
+	/* url kruisje: https://assets.codepen.io/274456/ui-icon-cross.svg */
+	content:url(https://assets.codepen.io/274456/ui-icon-cross.svg);
+  }
+  
+  
+  
+  
+  
+  /*******************/
+  /* LIJST MET LINKS */
+  /*******************/
+  nav ul { 
+	margin:0; 
+	padding:4em 1em 0;
+	list-style:none;
+	
+	gap:1em;
+	align-content:start;
+	
+	background:var(--menu-gradient);
+	
+	/* JOUW CODE HIER - stap 1 */
+	position:fixed;
+	left:0;
+	top:0;
+	bottom:0;
+	
+	/* JOUW CODE HIER - stap 2 */
+	transform:translatex(-100%);
+	
+	/* JOUW CODE HIER - stap 4 */
+	transition:transform .3s;
+  }
+  
+  /* als menu open is */
+  nav.toonMenu ul {
+	/* JOUW CODE HIER - stap 4 */
+	transform:translatex(0);
+  }
+  
+  nav li {
+	flex-basis:9em;
+	flex-grow:1;
+  }
+  
+  
+  
+  /************************/
+  /* EEN LINK IN DE LIJST */
+  /************************/
+  nav a {
+	/* icon en tekst met gap-je naast elkaar */
+	display:flex;
+	align-items:center;
+	column-gap:.25em;
+	font-family: 'futbinfont';
+	text-decoration: none;
+	color: var(--color-textwit);
+	transition: .3s;
+  }
+
+  nav a:hover {
+	/* icon en tekst met gap-je naast elkaar */
+	color: var(--color-textgrijs);
+  }
+  
+  nav a img {
+	width:auto;
+	height:1em;
+	width: 1em;
+  }
+  
+  nav a.active {
+	font-weight:bold;
+  }
+  
+  
+  
+  
+  
+  /****************************************************************/
+  /* styling voor de header als de browser minimaal 38em breed is */
+  /****************************************************************/
+  @media (min-width:66.25em) {
+	nav {
+	  /* JOUW CODE HIER - stap 8 */
+	  order:0;  
+	  flex-direction: row-reverse;
+	  padding-right: 5%;
+	}
+	
+	nav button {
+	  /* JOUW CODE HIER - stap 6 */
+	  display:none;
+	}
+	
+	nav ul {
+	  /* JOUW CODE HIER - stap 7 */
+	  position:static;
+	  transform:none;
+	  padding:0;
+	  background:none;
+	  display: flex;
+	  left: 0;
+	  margin-top: .5em;
+	}
+	
+	nav li {
+	  /* JOUW CODE HIER - stap 9 */
+	  flex-basis:unset;
+	  flex-grow:unset;
+	}
+	
+	nav a {
+	  /* JOUW CODE HIER - stap 10 */
+	  border:none;
+	}
+	
+  }
+  
+  
+  
+  
+  
+  /****************************************************************/
+  /* styling voor de header als de browser minimaal 57em breed is */
+  /****************************************************************/
+  @media (min-width:75em) {
+	nav{
+		justify-content: center;
+	}
+
+	nav input {
+		margin-left: 2em;
+	}
+
+	nav>img {
+		margin-right: 2em;
+	}
+  }
+  
+  

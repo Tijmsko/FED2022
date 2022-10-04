@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="eng">
+	
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Tijme">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Futbin</title>
+	
+	<link href="styles/style.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+</head>
+
+<body>
+	<header>
+		<section>
+			<img src="images/fireicon.png" alt="Populaire spelers">
+			<a href="playerprofile.html"><img src="images/antony.png" alt="Antony dos Santos"></a>
+			<a href="playerprofile.html"><img src="images/danjuma.png" alt="Arnaut Danjuma"></a>
+			<a href="playerprofile.html"><img src="images/kim.png" alt="Kim Lee Ju"></a>
+			<a href="playerprofile.html"><img src="images/llorrente.png" alt="Marcos Llorrente"></a>
+			<a href="playerprofile.html"><img src="images/margus.png" alt="Saeed Al-Owairan"></a>
+			<a href="playerprofile.html"><img src="images/ronaldo.png" alt="Cristiano Ronaldo"></a>
+			<a href="playerprofile.html"><img src="images/saintmax.png" alt="Allan Saint-Maximin"></a>
+			<a href="playerprofile.html"><img src="images/toure.png" alt="Yaya Touré"></a>
+			<a href="playerprofile.html"><img src="images/zakaria.png" alt="Denis Zakaria"></a>
+		</section>
+		<nav>
+			<!-- de button is niet relevant voor screenreaders -->
+			<!-- met aria-hidden="true" 'verstop' je de button voor ze -->
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg" alt="" /></button>
+			<input type="search" placeholder="search">
+			
+			<ul>
+			  <li><a class="active"><img src="images/home.png" alt=""> Home</a></li>
+			  <li><a href="#"><img src="images/toolsicon.png" alt=""> Squad Builder</a></li>
+			  <li><a href="#"><img src="images/sbcsmallcolor.png" alt=""> SBC's</a></li>
+			  <li><a href="#"><img src="images/drafticon.png" alt=""> Draft simulator</a></li>
+			  <li><a href="#"><img src="images/xpiconsmall.png" alt=""> Objectives</a></li>
+			  <li><a href="#"><img src="images/champs.png" alt=""> Champions</a></li>
+			  <li><a href="#"><img src="images/fireicon.png" alt=""> Live</a></li>
+			</ul>
+			<img src="images/smallfutbinlogo.png" alt="">
+		  </nav>
+
+	</header>
+	<main>
+		<header>
+			<img src="images/futbinbiglogo-w.png" alt="FutBin logo">
+			<div>
+				<a href="#">Players database</a>
+				<a href="#">Squad Builder</a>
+				<a href="#">SBC</a>
+			</div>
+		</header>
+		<section>
+			<a href="#"><img src="images/totwprediction.png" alt="Team of the week 1 predictions"></a>
+			<a href="#"><img src="images/futdatabase.png" alt="fifa ultimate team 23 database"></a>
+			<a href="#"><img src="images/onestowatch.png" alt="Ones to watch"></a>
+			<a href="#"><img src="images/releasedateinfo.png" alt="Release date and info"></a>
+		</section>
+		<section>
+			<div>
+				<form>
+					<fieldset>
+						<label for="populair">
+							<input name="lijst" type="radio" id="populair">
+							Populair
+						</label>
+						<label for="currentTotw">
+							<input name="lijst" type="radio"id="currentTotw">
+							Current TOTW
+						</label>
+						<label for="newPlayers">
+							<input name="lijst" type="radio" id="newPlayers">
+							New players
+						</label>
+					</fieldset>
+				</form>
+			</div>
+			<ul>
+				<li class="new"><a href="playerprofile.html"><img src="images/vandijk.png" alt="Virgil Van Dijk player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/son.png" alt="Heung Min Son player profile"></a></li>
+				<li class="totw"><a href="playerprofile.html"><img src="images/salah.png" alt="Salah player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/ronaldokaart.png" alt="Cristiano Ronaldo player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/oblak.png" alt="Jan Oblak player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/neymar.png" alt="Neymar Junior player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/neuer.png" alt="Manuel Neuer player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/messi.png" alt="Lionel Messi player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/mbappe.png" alt="Kylian Mbappe player profile"></a></li>
+				<li class="totw"><a href="playerprofile.html"><img src="images/marquinhos.png" alt="Marquinhos player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/mane.png" alt="Sadio Mané player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/lewandoski.png" alt="Robert Lewandoski player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/kroos.png" alt="Toni Kroos player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/kimmich.png" alt="Joshua Kimmich player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/kante.png" alt="N'golo Kante player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/kane.png" alt="Harry Kane player profile"></a></li>
+				<li class="totw"><a href="playerprofile.html"><img src="images/haaland.png" alt="Erling Haaland player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/ederson.png" alt="Ederson player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/debruyne.png" alt="Kevin de Bruyne player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/courtois.png" alt="Thibaut Courtois player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/casemiro.png" alt="Carlos Henrique Casemiro player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/benzema.png" alt="Karim Benzema player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/alisson.png" alt="Alisson Becker player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/pulisic.png" alt="Christian Pulisic player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/bellingham.png" alt="Jude Bellingham player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/grealish.png" alt="Jack Grealish player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/vlahovic.png" alt="Dusan Vlahovic player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/valverde.png" alt="Federico Valverde player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/vinicius.png" alt="Vinicius Junior player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/davies.png" alt="Alphonso Davies player profile"></a></li>
+				<li class="new"><a href="playerprofile.html"><img src="images/fellx.png" alt="Joao Felix player profile"></a></li>
+				<li class="totw"><a href="playerprofile.html"><img src="images/modric.png" alt="Luka Modric player profile"></a></li>
+				<li class=""><a href="playerprofile.html"><img src="images/vandorp.png" alt="Kyan van Dorp player profile"></a></li>
+			</ul>
+			<a href="">ALL POPULAR PLAYERS</a>
+		</section>
+		<section>
+			<div>
+				<img src="images/sbcsmallcolor.png" alt="squad building challenge icoon">
+				<h2>Latest SBC</h2>
+				<a href="">More...</a>
+			</div>
+			<ul>
+				<li><a href="#"><img src="images/marqueematchups.png" alt="">Marquee Matchups</a></li>
+				<li><a href="#"><img src="images/foundations1.png" alt="">Foundations 1</a></li>
+				<li><a href="#"><img src="images/foundations2.png" alt="">Foundations 2</a></li>
+				<li><a href="#"><img src="images/otwsbc.png" alt="">Di Maria</a></li>
+				<li><a href="#"><img src="images/plpotm.png" alt="">Marcus Rashford</a></li>
+				<li><a href="#"><img src="images/sapotm.png" alt="">Kim Min-Jae</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Random New Squads</h2>
+			<ul>
+				<li><a href="#"><p>New Town FA</p><p>4-3-2-1</p></a></li>
+				<li><a href="#"><p>LA LIGA-BUNDESLIGA</p><p>4-3-3</p></a></li>
+				<li><a href="#"><P>Prem narrow</P><p>4-4-2</p></a></li>
+				<li><a href="#"><p>Storm</p><p>4-2-3-1</p></a></li>
+				<li><a href="#"><p>Main squad1</p><p>3-5-2</p></a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Top Reviews</h2>
+			<ul>
+				<li><a href="#"><img src="images/saintmax.png" alt="Foto van Allan Saint Maximin">Allan Saint Maximin</a></li>
+				<li><a href="#"><img src="images/antony.png" alt="Foto van Antony dos Santos">Antony</a></li>
+				<li><a href="#"><img src="images/kim.png" alt="Foto van Kim Min-jae">Kim Min-jae</a></li>
+				<li><a href="#"><img src="images/ronaldo.png" alt="Foto van Cristiano Ronaldo">Cristiano Ronaldo</a></li>
+				<li><a href="#"><img src="images/zakaria.png" alt="Foto van Denis Zakaria">Denis Zakaria</a></li>
+			</ul>
+		</section>
+		<section>
+			<h2>Today's Top Packs</h2>
+			<ul>
+				<li><a href="#"><p>DKeajfc</p><p>166,600⭑</p></a></li> 
+				<li><a href="#"><p>lollllll</p><p>164,261⭑</p></a></li> 
+				<li><a href="#"><p>omfggg</p><p>152,238⭑</p></a></li> 
+				<li><a href="#"><p>Mbappe</p><p>138,174⭑</p></a></li> 
+				<li><a href="#"><p>ez</p><p>113,230⭑</p></a></li> 
+			</ul>
+		</section>
+		<section>
+			<h2>Latest index 100</h2>
+			<div>
+				<a href="#">
+					<img src="images/playstation.png" alt="playstation logo">
+					<h3>Latest</h3>
+					<p>162.79</p>
+					<h3>Change / %</h3>
+					<p>-3.94%</p>
+					<h3>Momentum</h3>
+					<p>55.01%</p>
+					<h3>Highest</h3>
+					<p>167.45</p>
+					<h3>Lowest</h3>
+					<p>159.66</p>
+				</a>
+				<a href="#">
+					<img src="images/xbox.png" alt="xbox logo">
+					<h3>Value</h3>
+					<p>170.38</p>
+					<h3>Change / %</h3>
+					<p>-0.23%</p>
+					<h3>Momentum</h3>
+					<p>24.01%</p>
+					<h3>Highest</h3>
+					<p>177.03</p>
+					<h3>Lowest</h3>
+					<p>168.34</p>
+				</a>
+				<a href="#">
+					<img src="images/origin.png" alt="origin logo">
+					<h3>Value</h3>
+					<p>173.49</p>
+					<h3>Change / %</h3>
+					<p>0.94%</p>
+					<h3>Momentum</h3>
+					<p>29.01%</p>
+					<h3>Highest</h3>
+					<p>196.73</p>
+					<h3>Lowest</h3>
+					<p>172.72</p>
+				</a>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<section>
+			<p>Contact us on social networks!</p>
+			<div>
+				<a href="Facebook.com"><img src="images/twitter.png" alt=""></a>
+				<a href="twitter.com"><img src="images/instagram.png" alt=""></a>
+				<a href="instagram.com"><img src="images/facebook.png" alt=""></a>
+			</div>
+		</section>
+		<!-- <section>footer links</section>
+		<section>talen</section> -->
+	</footer>
+	<script defer src="scripts/script.js"></script>
+</body>
+	
+</html>
