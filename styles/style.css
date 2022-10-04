@@ -841,3 +841,141 @@ nav input{
   }
   
   
+
+
+
+  /* 777777777777777777777777777777777777777777777777 */
+  /* 777777777777777777777777777777777777777777777777 */
+  /* 777777777777777777777777777777777777777777777777 */
+ 				 /* Players.html css */
+  /* 777777777777777777777777777777777777777777777777 */
+  /* 777777777777777777777777777777777777777777777777 */
+  /* 777777777777777777777777777777777777777777777777 */
+
+  /* Titel en onderschrift */
+  	#players>section:nth-of-type(1)>h1 img{
+	height: 1.2em;
+	}
+
+	#players>section:nth-of-type(1)>h1{
+		font-family: 'futbinfont';
+		margin: 0;
+	}
+
+	#players>section:nth-of-type(1)>p{
+		font-family: 'futbinfont';
+		margin: 0;
+	}
+
+  	#players>section:nth-of-type(1){
+		row-gap: 0;
+		display: flex;
+		flex-direction: column;
+	}
+	/* einde Titel en onderschrift */
+
+	/* filters section */
+	#players>section:nth-of-type(2){
+		background-color: var(--color-menugrijs);
+		display: flex;
+		padding: 1em;
+		flex-wrap: wrap;
+	}
+
+	#players>section:nth-of-type(2)>img{
+		height: 1.5em;
+	}
+
+	#players>section:nth-of-type(2)>input{
+		height: 2em;
+		width: 12em;
+		margin-left: .5em;
+		background-color: transparent;
+		border: 0;
+	}
+
+	#players>section:nth-of-type(2)>p{
+		font-family: 'futbinfont';
+		font-size: 1em;
+		margin: 0;
+		display: flex;
+		color: var(--color-textwit);
+		margin-left: .5em;
+	}
+
+	#players>section:nth-of-type(2)>p img{
+		height: .3em;
+		margin-top: .5em;
+		margin-left: 2px;
+	}
+
+	#players>section:nth-of-type(2)>p:nth-of-type(9) img:nth-of-type(1){
+		height: 1em;
+		margin: 0;
+		margin-top: 0.2em;
+	}
+	/* filters section */
+
+	/* Spelers lijst */
+
+	#players>ul{
+		padding: 0;
+		margin: 0;
+	}
+
+	#players>ul>li{
+		display: flex;
+		height: 4em;
+		border-style:solid;
+		border-color:var(--color-backgroundtopheader);
+		border-width:0 0 1px;
+	}
+
+	#players>ul>li>div{
+		line-height: 0em;
+	}
+
+	#players>ul>li *{
+		margin: 0;
+		margin-left: 1em;
+		line-height: 4.5em;
+	}
+	#players>ul>li>div p{
+		margin: 0;
+		line-height: 0;
+		margin-top: 2em;
+	}
+
+	#players>ul>li>div img{
+		height: 0.85em;
+		margin: 0;
+		margin-top: .6em;
+		padding: 0;
+		line-height: 0em;
+	}
+
+	#players>ul>li>img:nth-of-type(1){
+		height: 3.8em;
+	}
+
+	#players>ul>li>p:nth-of-type(3)>img:nth-of-type(1){
+		height: 1em;
+		margin: 0;
+		margin-top: 1.65em;
+	}
+	#players>ul>li>p:nth-of-type(3){
+		display: flex;
+	}
+
+	#players>ul>li p{
+		font-family: 'futbinfont';
+		color: var(--color-textzwart);
+	}
+
+	#players>ul>li p:nth-of-type(6){
+		background-color: var(--color-futbingroen);
+		height: 1.5em;
+		width: 1.5em;
+		align-self: center;
+	}
+	/* Spelers lijst */
