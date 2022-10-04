@@ -1,4 +1,4 @@
-tijmsko.github.io 
+https://tijmsko.github.io/FED2022/ 
 
 # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
