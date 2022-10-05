@@ -103,14 +103,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details>
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  # de hele pagina: 
+  ##![breakdownschets](https://user-images.githubusercontent.com/112875181/194004099-b823f3bd-c6d4-4d86-8ff2-d1071be23b20.png)  
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+
 
 </details>
 
